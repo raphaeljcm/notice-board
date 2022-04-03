@@ -1,9 +1,11 @@
 const express = require('express');
 const router = express.Router();
+const cors = require('cors');
 const posts = require('../model/posts');
 
 // middlewares
 router.use(express.json());
+router.use(cors({ origin: 'http://localhost:3000' }));
 
 router.get('/', (req, res) => res.send('Nada por aqui meu querido...'));
 

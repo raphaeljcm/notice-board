@@ -1,10 +1,4 @@
-let posts = [
-  {
-    id: 'daskjdkash',
-    title: 'Testing board',
-    description: 'Testing description'
-  },
-];
+let posts = [];
 
 function getAll() {
   return posts;

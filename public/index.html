@@ -5,9 +5,39 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+
   <title>Notice Board</title>
 </head>
 <body>
+  <header>
+    <h1>Notice board</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <section id="create-posts">
+        <h2>New Post</h2>
+        <div class="buttons">
+          <input type="text" id="title" placeholder="Title">
+          <input type="text" id="desc" placeholder="Description">
+          <button id="saveBtn">Save</button>
+        </div>
+      </section>
   
+      <section id="board">
+        <h2>Board</h2>
+        
+        <div id="posts">
+
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script src="./script.js"></script>
 </body>
 </html>
